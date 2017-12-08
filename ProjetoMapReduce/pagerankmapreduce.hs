@@ -53,7 +53,7 @@ reducer f m  = foldl' (M.unionWith f) M.empty m
 
 -- | pre processamento 
 {--
- cria uma lista contendo os nós gerados da seguinte forma: para cada nó lido (node1, (pagerank, [node4, node2])) é gerado (node4,(pagerank/2, []), (node2,(pagerank/2, []), (node1, (0, [node4, node2])). Resumindo seria um lista com a saída do mapper de cada nó)
+ Gera a entrada, para cada nó lido (node1, (pagerank, [node4, node2])) é gerado (node4,(pagerank/2, []), (node2,(pagerank/2, []), (node1, (0, [node4, node2])). Resumindo seria um lista de nós gerados pelo mapper de cada nó)
 --}
 
 parseFile :: String -> [(Int, Int)]

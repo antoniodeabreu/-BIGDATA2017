@@ -1,14 +1,4 @@
 {-# LANGUAGE UnicodeSyntax #-}
-
-{-|
-Module      : LinearRegression
-Description : Gradient Descent
-Copyright   : (c) Fabrício Olivetti, 2017
-License     : GPL-3
-Maintainer  : fabricio.olivetti@gmail.com
-Applies gradient descent to a linear regression problem.
--}
-
 module Main where
 
 import System.IO
